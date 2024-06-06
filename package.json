@@ -1,0 +1,23 @@
+{
+  "name": "combined-node-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "fs-extra": "^11.2.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.9.7",
+    "nodemailer": "^6.9.13",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
+

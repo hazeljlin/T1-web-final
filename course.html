@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Page</title>
+    <link rel="stylesheet" href="7.4D.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="resources/logo3.JPG" alt="Logo" height="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+                    <li class="nav-item flex-grow-1 text-center">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item flex-grow-1 text-center">
+                        <a class="nav-link" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item flex-grow-1 text-center">
+                        <a class="nav-link" href="works.html">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Search Button and Input Field -->
+            <div class="d-flex align-items-center">
+                <button id="toggleSearchButton" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                <input type="text" id="searchQuery" placeholder="Search..." class="form-control me-2 d-none">
+                <button id="searchButton" class="btn btn-primary d-none">Search</button>
+            </div>
+            <!-- Sign Up Link -->
+            <a href="tutorial.html" class="btn btn-primary ms-3">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="box mt-4">
+            <h1>Elegant hands, sharp rhythm </h1>
+            <h5>the third half-year course for Offhand Flourishing</h5>
+            <video autoplay muted loop width="100%">
+                <source src="resources/video1.MP4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="box mt4">
+            <h2>Course details</h2>
+            <p> When completing the course, you will be able to enjoy the silky movement of the Offhand arm, and easily
+                complete common flourishing works (flowers,
+                birds, lace decorations, etc.). You can master the basic elements and matching rules of OF, and perform
+                classical graphic design combining text and painting.
+                By being familiar with the history of Offhand Flourishing and the works of masters of
+
+            <p>Schedule:One lesson per week, 24 lessons in total. The main content revolves around
+                basic skills and techniques,
+                and is interspersed with content such as appreciation of master works and styles, aesthetic awareness
+                and cognition every month. The course content is rich and there are a lot of homework exercises.</p>
+        </div>
+        <div class="box mt-4">
+            <h2>Meet the Expert Behind Our Course</h2>
+            <div id="tutor1" class="row mt-4 p-5 bg-light">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="resources/tutor1.JPG" alt="tutor1" class="img-fluid rounded-circle">
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h5><strong><a href="https://www.instagram.com/epiphany_penman/"
+                                target="_blank">Epiphany_penman@Instagram</a></strong></h5><br>
+                    <p>A calligraphy expert and enthusiast.
+                    <p>Together with Nibway, a top senior figure in the field, he completed the Chinese translation and
+                        annotation of "Lessons in Offhand Flourishing" by William E. Dennis, a master of the golden age.
+                        He also received the support of Dr. Vitolo, an authoritative person from the American IAMPETH
+                        organization, and wrote the preface for the Chinese translation and annotation.</p>
+                    <p>In 2020, he was invited to participate in the "Graceful-The Art of Letters" International
+                        English Calligraphy Exhibition in Singapore.</p>
+                    <p>In 2021, he was invited to participate in the "Annual Exhibition of Western Calligraphy:
+                        Popularity and Art" of the Macau Type Artists Association.</p>
+                    <p>You can explore his OF works on our <a href="works.html" target="_blank">Gallery
+                            Page</a>.</p>
+                </div>
+            </div>
+            <div class="box mt-4">
+                <h2>Course Registration Form</h2>
+                <form id="registrationForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        <div class="error" id="nameError"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        <div class="error" id="emailError"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <div id="registrationResult"></div>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide box" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="resources/modal1.JPG" class="d-block w-100" alt="OF" data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                        <div class="carousel-caption">
+                            <h5>2023 OF Course Review</h5>
+                            <p>Explore the beauty of Offhand Flourishing through a half-year course.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="resources/modal2.JPG" class="d-block w-100" alt="ER" data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                        <div class="carousel-caption">
+                            <h5>2023 ER Course Review</h5>
+                            <p>English Roundhand's elegant style</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="resources/modal3.JPG" class="d-block w-100" alt="AES" data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                        <div class="carousel-caption">
+                            <h5>2023 AES Course Review</h5>
+                            <p>Advanced Engrossers' Script, What we learned.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Modals -->
+            <!-- Modal 1 -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal1Label">2023 OF Course Review</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Students' Works:
+                            <img src="resources/modal1.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/works1.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/works2.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/works4.JPG" class="img-fluid" alt="OF">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal2Label">2023 ER Course Review</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Students' Works:
+                            <img src="resources/ER works1.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/ER works2.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/ER works3.JPG" class="img-fluid" alt="OF">
+                            <img src="resources/ER works4.JPG" class="img-fluid" alt="OF">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal3Label">2023 AES Course Review</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Advanced Engrossers' Script, What we learned.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2024 Epiphany_penman. All rights reserved.</p>
+                <p>Last updated: May 14, 2024</p>
+                <p>Contact us: <a href="mailto:jxl1712@gmail.com">jxl1712@gmail.com</a></p>
+            </footer>
+
+            <script src="7.4D.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

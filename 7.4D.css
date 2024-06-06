@@ -1,0 +1,102 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-style: normal;
+}
+
+
+header {
+    background-color: #ccc;
+    padding: 10px 20px;
+    color: #333;
+}
+
+.navbar {
+    border-bottom: 2px solid #444;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.btn-primary,
+.btn-secondary{
+    margin-top: 10px;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 20px;
+    /* Adjust size as needed */
+    color: black;
+    /* Set the icon color to black */
+}
+
+.search-box {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 30px;
+    border: 1px solid #ccc;
+    transition: width 0.4s ease-in-out;
+}
+
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+
